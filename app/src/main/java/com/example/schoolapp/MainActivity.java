@@ -1,7 +1,10 @@
 package com.example.schoolapp;
 
+import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
@@ -23,6 +26,12 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // Set the status bar color to match the toolbar color
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
+            getWindow().setStatusBarColor(getResources().getColor(R.color.primary));
+        }
 
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -65,7 +74,7 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_achievements) {
             fragment = new AchievementsFragment();
             title = "Achievements";
-        }else if (id == R.id.nav_contact_list) {
+        } else if (id == R.id.nav_contact_list) {
             fragment = new ContactListFragment();
             title = "Contact List";
         }
@@ -87,5 +96,4 @@ public class MainActivity extends AppCompatActivity
             getSupportActionBar().setTitle(title);
         }
     }
-
 }

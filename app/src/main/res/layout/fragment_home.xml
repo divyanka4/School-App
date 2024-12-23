@@ -11,17 +11,11 @@
         android:orientation="vertical">
 
         <!-- Banner Section -->
-
-
-
-            <androidx.viewpager2.widget.ViewPager2
-                android:id="@+id/home_banner"
-                android:layout_width="match_parent"
-                android:layout_height="210dp"
-                android:layout_marginBottom="16dp"/>
-
-
-
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/home_banner"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:layout_marginBottom="16dp"/>
 
         <!-- Welcome Section -->
         <androidx.cardview.widget.CardView
@@ -50,12 +44,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Discover excellence in education, nurturing young minds for a brighter future."
+                    android:text="Discover excellence in education, nurturing young minds for a brighter future. Our dedicated staff and innovative programs ensure that every student reaches their full potential. Join us in creating a community of lifelong learners."
                     android:textColor="@color/text_primary"
                     android:textSize="16sp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
-
 
         <!-- Academics Section -->
         <androidx.cardview.widget.CardView
@@ -94,11 +87,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
-                        android:text="Our school offers a wide range of academic programs designed to meet the needs of all students..."
+                        android:text="Our school offers a wide range of academic programs designed to meet the needs of all students. From STEM to the arts, our curriculum is both challenging and engaging. We strive to foster a love of learning and critical thinking skills that will serve our students throughout their lives."
                         android:textColor="@color/text_primary"
                         android:textSize="16sp" />
-
-
                 </LinearLayout>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -121,7 +112,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="250dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/extra2"
+                    android:src="@drawable/extra1"
                     app:shapeAppearanceOverlay="@style/RoundedImageView" />
 
                 <LinearLayout
@@ -142,7 +133,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
-                        android:text="Activities at IIS are meaningful as they cater towards holistic development..."
+                        android:text="Activities at IIS are meaningful as they cater towards holistic development. From sports to arts, our extracurricular programs are designed to complement our academic offerings and provide students with opportunities to explore their interests and develop new skills."
                         android:textColor="@color/text_primary"
                         android:textSize="16sp" />
                 </LinearLayout>
@@ -188,12 +179,48 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
-                        android:text="Our school campus is designed to provide a safe and supportive learning environment..."
+                        android:text="Our school campus is designed to provide a safe and supportive learning environment. With state-of-the-art facilities and a vibrant community, students have everything they need to thrive both academically and socially. Join us and experience the best of campus life."
                         android:textColor="@color/text_primary"
                         android:textSize="16sp" />
                 </LinearLayout>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="16dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:src="@drawable/logo1"
+                android:scaleType="fitCenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:src="@drawable/logo2"
+                android:scaleType="fitCenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:src="@drawable/logo3"
+                android:scaleType="fitCenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:src="@drawable/logo4"
+                android:scaleType="fitCenter" />
+        </LinearLayout>
     </LinearLayout>
 </ScrollView>

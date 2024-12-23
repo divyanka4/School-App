@@ -16,7 +16,7 @@
             android:layout_height="wrap_content"
             android:text="About Our School"
             android:gravity="start"
-            android:textColor="@color/blue"
+            android:textColor="@color/primary"
             android:textSize="28sp"
             android:textStyle="bold" />
 
@@ -48,7 +48,7 @@
             android:text="Our Mission"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:textColor="@color/blue"
+            android:textColor="@color/primary"
             android:layout_marginTop="16dp"/>
 
         <androidx.cardview.widget.CardView
@@ -72,7 +72,7 @@
             android:text="Vision"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:textColor="@color/blue"
+            android:textColor="@color/primary"
             android:layout_marginTop="16dp"/>
 
         <androidx.cardview.widget.CardView
